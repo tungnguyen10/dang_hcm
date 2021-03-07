@@ -18,15 +18,48 @@
   flex-wrap: wrap;
 }
 .header {
-  background: url(../images/bg_header.png) no-repeat calc(100% - 71%) center/ cover,#fff5cc;
+  background:#fff5cc;
+  position: relative;
+  
   .logo{
+    padding: 10px 20% 10px 0;
+    position: relative;
+    z-index: 3;
+    @include sp{
       padding: 10px 0;
+    }
+      img{
+        position: relative;
+        z-index: 2;
+      }
+      &::before{
+        content: '';
+        background: url(../images/bg_header.png) no-repeat center center/cover;
+        position: absolute;
+        left: -8%;
+        top: -1%;
+        bottom: -1%;
+        right: -8%;
+        @include sp{
+         display: none;
+        }
+      }
   }
   .nivo-main-image{
+    object-fit: cover;
     height: 100% !important;
   }
   .slider_top{
     height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    bottom: 0;
+    z-index: 0;
+    @include sp{
+      display: none;
+    }
   }
   &_top {
     background: #f2f2f2;

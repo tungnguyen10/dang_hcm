@@ -109,6 +109,9 @@
     line-height: 46px;
     padding: 0 10px;
     margin-bottom: 10px;
+    @include sp {
+      font-size: 1.6rem;
+    }
     i {
       display: inline-block;
       margin-right: 10px;
@@ -122,6 +125,9 @@
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 15px;
+    @include sp {
+      font-size: 1.6rem;
+    }
     + .detail-post-date{
       font-size: 1.3rem;
       font-style: italic;

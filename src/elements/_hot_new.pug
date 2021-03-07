@@ -1,0 +1,30 @@
+.hot_new
+  .container
+    .row
+      .col-11.col-lg-9.col-md-11
+        .hot_new__left
+          .hot_new__left_ttl
+            i.far.fa-bell 
+            span Tin vắn:
+          .hot_new__left_content
+            marquee(onmouseover='this.stop()' onmouseout='this.start()' scrollamount='5' scrolldelay='12' direction='left')
+              a(href='#' target='_blank')
+                i.fab.fa-hotjar 
+                |Khẩn trương thực hiện nhiệm vụ Chủ tịch UBND tỉnh giao
+              a(href='#' target='_blank')
+                i.fab.fa-hotjar 
+                |Khẩn trương thực hiện nhiệm vụ Chủ tịch UBND tỉnh giao
+              a(href='#' target='_blank')
+                i.fab.fa-hotjar 
+                |Khẩn trương thực hiện nhiệm vụ Chủ tịch UBND tỉnh giao
+              a(href='#' target='_blank')
+                i.fab.fa-hotjar 
+                |Khẩn trương thực hiện nhiệm vụ Chủ tịch UBND tỉnh giao
+              
+      .col-1.col-lg-3.col-md-1
+        block menu
+          include ./_search.pug
+        button#trigger-mobile.d-sm-inline-block.d-lg-none(type='button' aria-label='Menu Mobile')
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar

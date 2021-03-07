@@ -1,0 +1,110 @@
+doctype html
+html(lang="vi")
+  head
+    title #{TITLE}
+    meta(charset="utf-8")
+    meta(name="description" content="DESCRIPTION")
+    meta(name="keywords" content="KEYWORDS")
+    meta(name="format-detection" content="telephone=no")
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    link(rel='shortcut icon' type='image/x-icon' href='/templates/images/favicon.png')
+    link(rel='icon' type='image/x-icon' href='/templates/images/favicon.png')
+    link(rel='canonical' href='https://vemaybaythanhtung.com/')
+    //- google
+    meta(itemprop='name' content='Vé máy bay thanh tùng')
+    meta(itemprop='description' content='DESCRIPTION')
+    meta(itemprop='image' content='/templates/images/icon.png')
+    //- Twitter
+    meta(name='twitter:card' content='summary_large_image')
+    meta(name='twitter:site' content='@publisher_handle')
+    meta(name='twitter:title' content='Vé máy bay thanh tùng')
+    meta(name='twitter:description' content='DESCRIPTION')
+    meta(name='twitter:creator' content='@author_handle')
+    meta(name='twitter:image:src' content='/templates/images/icon.png')
+    //- facebook
+    meta(property='og:title' content='Vé máy bay thanh tùng')
+    meta(property='og:type' content='article')
+    meta(property='og:url' content='https://vemaybaythanhtung.com/')
+    meta(property='og:image' content='/templates/images/icon.png')
+    meta(property='og:description' content='DESCRIPTION')
+    meta(property='og:site_name' content='Vé máy bay thanh tùng')
+
+    //- CSS
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css' integrity='sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==' crossorigin='anonymous')
+    link(href="./templates/css/grid.css" rel="stylesheet")
+    link(href="./templates/css/vendor/nivo-slider.css" rel="stylesheet")
+    link(href="./templates/css/style.css" rel="stylesheet")
+
+body
+  //- header
+  block header
+    include ./elements/_header.pug
+  block menu
+    include ./elements/_menu.pug
+  block hot_new
+    include ./elements/_hot_new.pug
+  block breadcrumb
+    include ./elements/_breadcrumb.pug
+  
+
+    
+    section.section_contact
+      .container
+        .form-contact
+          .row
+            .col-xl-4.col-lg-5.col-md-6.col-12.col-contact
+              .content-left
+                p.text_des CƠ QUAN TRUNG ƯƠNG ĐẢNG CỘNG SẢN VIỆT NAM
+                .content-contact
+                  i.fas.fa-map-marker-alt
+                  span
+                    b Toà soạn: 
+                    | 381 Đội Cấn, Ba Đình, Hà Nội
+                .content-contact
+                  i.fas.fa-envelope
+                  span
+                    b Hotline: 
+                    a(href='tell:02838940390')
+                      | 0283 8940 390
+                .content-contact
+                  i.fas.fa-phone
+                  span
+                    b Email: 
+                    a(href='mailto:dhcn@iuh.edu.vn')
+                      | dhcn@iuh.edu.vn
+                .content-contact
+                  i.fas.fa-clock
+                  span
+                    b Giờ làm việc: 
+                    | Giờ làm việc: 8h00 – 17h00 từ thứ 2 đến Chủ nhật
+            .col-xl-8.col-lg-7.col-md-6.col-12.col-contact-2
+              .content-right
+                p.text_des Gửi thông tin
+                form#contact(accept-charset='UTF-8' action='/contact' method='post')
+                  input(name='FormType' type='hidden' value='contact')
+                  input(name='utf8' type='hidden' value='true')
+                  .form-signup
+                    .group_contact
+                      fieldset.form-group.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                        input.form-control.form-control-lg(placeholder='Họ và tên' type='text' required='' value='' name='contact[Name]')
+                      fieldset.form-group.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                        input#email1.form-control.form-control-lg(placeholder='Email' type='email' pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' required='' value='' name='contact[email]')
+                      fieldset.form-group.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                        textarea#comment.form-control.content-area.form-control-lg(placeholder='Nội dung' name='contact[body]' rows='5' required='')
+                      button.btn.btn-primary.btn-lienhe(type='submit') Gửi tin nhắn
+      .iFrameMap
+        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.6388035882823!2d106.67952227214906!3d10.845310511090728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175298451960a6b%3A0x6beba7ae3a0953dd!2zVsOpIG3DoXkgYmF5IFRoYW5oIFTDuW5n!5e0!3m2!1sen!2s!4v1592500102694!5m2!1sen!2s' width='100%' height='700' style='border:0' allowfullscreen='')
+
+
+  //- footer
+  block footer
+    include ./elements/_footer.pug
+  block menu_mobile
+    include ./elements/_menu_mobile.pug
+
+  script(src="./templates/js/vendor/jquery.min.js")
+  script(src="./templates/js/vendor/slick.js")
+  script(src="./templates/js/vendor/jquery.nivo.slider.js")
+  script(src="./templates/js/default.js")
+  script(src="./templates/js/index.js")

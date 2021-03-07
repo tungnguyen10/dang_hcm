@@ -1,0 +1,6 @@
+.search.d-none.d-lg-block
+  form.input-group.search-bar(action='/search' method='get' role='search')
+    input.input-group-field.st-default-search-input.search-text(type='search' name='query' value='' placeholder='Tìm kiếm... ' aria-label='search' autocomplete='off' required='')
+    span.input-group-btn
+      button.btn.icon-fallback-text(aria-label='search')
+        i.fa.fa-search

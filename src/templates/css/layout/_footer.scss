@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+//------------------------------------------------------------------------------
+//
+//	footer
+//  
+//------------------------------------------------------------------------------
+
+footer {
+  border-top: 2px solid #ffcf01;
+  background: #fff;
+  position: relative;
+  .footer_content{
+    background: url(../images/bg_footer.jpg) no-repeat center bottom;
+    padding: 30px 0;
+    font-size: 1.5rem;
+    color: rgb(102, 102, 102);
+    line-height: (25/15);
+    h2{
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    &__address{
+
+    }
+    &__statistic{
+      text-align: right;
+      padding-top: 30px;
+      @include tab_md_only{
+        padding-top: 0;
+        text-align: left;
+      }
+      @include sp{
+        padding-top: 0;
+        text-align: left;
+      }
+      .statistic_analys{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        @include tab_md_only{
+          margin-top: 20px;
+          justify-content: flex-start;
+        }
+        @include sp{
+          margin-top: 20px;
+          display: block;
+        }
+        dl{
+          position: relative;
+          display: table;
+          @include tab_md_only{
+            margin-bottom: 0;
+          }
+          @include sp{
+            margin-bottom: 0;
+          }
+          &:not(:last-child){
+            margin-right: 15px;
+            padding-right: 15px;
+            &::before{
+              content: '|';
+              position: absolute;
+              right: 0;
+              @include sp{
+                opacity: 0;
+              }
+            }
+          }
+          dt,dd{
+            display: table-cell;
+          }
+          dt{
+            i{
+              padding-right: 0.2rem;
+            }
+          }
+          dd{
+            color: #f2b400;
+          }
+        }
+      }
+      
+    }
+    
+  }
+}
+.copyright{
+  color: $white;
+  background: $linkColor02;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+}
+.back-to-top {
+  position: absolute;
+  right: 10px;
+  bottom: 60px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  top: auto !important;
+  height: 40px;
+  width: 40px;
+  background-color: #000;
+  border: 2px solid #fff;
+  line-height: 36px;
+  border-radius: 4px;
+  font-size: 20px;
+  transition: all 0.5s ease-out 0s;
+  transform: translateY(-120px);
+  opacity: 0;
+  visibility: hidden;
+
+  &:hover {
+    color: #fff;
+    background-color: #b80002;
+    border-color: #b80002;
+  }
+
+  &.show {
+    position: fixed;
+    z-index: 999;
+    transition: all 0.3s ease-out 0s;
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}

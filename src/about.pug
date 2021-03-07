@@ -1,0 +1,253 @@
+doctype html
+html(lang="vi")
+  head
+    title #{TITLE}
+    meta(charset="utf-8")
+    meta(name="description" content="DESCRIPTION")
+    meta(name="keywords" content="KEYWORDS")
+    meta(name="format-detection" content="telephone=no")
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    link(rel='shortcut icon' type='image/x-icon' href='/templates/images/favicon.png')
+    link(rel='icon' type='image/x-icon' href='/templates/images/favicon.png')
+    link(rel='canonical' href='https://vemaybaythanhtung.com/')
+    //- google
+    meta(itemprop='name' content='Vé máy bay thanh tùng')
+    meta(itemprop='description' content='DESCRIPTION')
+    meta(itemprop='image' content='/templates/images/icon.png')
+    //- Twitter
+    meta(name='twitter:card' content='summary_large_image')
+    meta(name='twitter:site' content='@publisher_handle')
+    meta(name='twitter:title' content='Vé máy bay thanh tùng')
+    meta(name='twitter:description' content='DESCRIPTION')
+    meta(name='twitter:creator' content='@author_handle')
+    meta(name='twitter:image:src' content='/templates/images/icon.png')
+    //- facebook
+    meta(property='og:title' content='Vé máy bay thanh tùng')
+    meta(property='og:type' content='article')
+    meta(property='og:url' content='https://vemaybaythanhtung.com/')
+    meta(property='og:image' content='/templates/images/icon.png')
+    meta(property='og:description' content='DESCRIPTION')
+    meta(property='og:site_name' content='Vé máy bay thanh tùng')
+
+    //- CSS
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css' integrity='sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==' crossorigin='anonymous')
+    link(href="./templates/css/grid.css" rel="stylesheet")
+    link(href="./templates/css/vendor/slick.css" rel="stylesheet")
+    link(href="./templates/css/vendor/slick-theme.css" rel="stylesheet")
+    link(href="./templates/css/vendor/nivo-slider.css" rel="stylesheet")
+    link(href="./templates/css/style.css" rel="stylesheet")
+
+body
+  //- header
+  block header
+    include ./elements/_header.pug
+  block menu
+    include ./elements/_menu.pug
+  block hot_new
+    include ./elements/_hot_new.pug
+  block breadcrumb
+    include ./elements/_breadcrumb.pug
+  
+
+    
+    section.body-content
+      .container
+        .row
+          .col-12.col-md-12.col-lg-8.js-animate
+            
+            
+            .row.body-contents
+              .col-12
+                h1.title.title-01 
+                  i.far.fa-newspaper
+                  |Tin tức
+              .col-12.col-lg-6.col-md-6.news_list.js-animate
+
+                .item
+                  .item-images
+                    a.image-item(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020')
+                      img.w-100(src='./templates/images/tin_tuc1.jpg' srcset='./templates/images/tin_tuc1@2x.jpg 2x' alt='Ve may bay Thanh Tung')
+                  .content_item
+                    h3
+                      a(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020') Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020 tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương Lấy sự hài lòng của người dân làm thước đo cho hiệu quả công tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương 
+                    .post-date
+                      i.far.fa-calendar-alt
+                      |  22/01/2021
+                  .des_item Ngày 22/5, Thường trực Hội VHNT tỉnh tổ chức cuộc họp BCH mở rộng để triển khai các nhiệm vụ từ nay đến cuối năm 2020
+                  .viewmore
+                    a.btn.btn_hover_black(href='detail.html' title='vé máy bay Thanh Tùng')
+                      i.far.fa-hand-point-right
+                      | Đọc thêm  
+              .col-12.col-lg-6.col-md-6.news_list.js-animate
+
+                .item
+                  .item-images
+                    a.image-item(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020')
+                      img.w-100(src='./templates/images/tin_tuc1.jpg' srcset='./templates/images/tin_tuc1@2x.jpg 2x' alt='Ve may bay Thanh Tung')
+                  .content_item
+                    h3
+                      a(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020') Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020 tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương Lấy sự hài lòng của người dân làm thước đo cho hiệu quả công tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương 
+                    .post-date
+                      i.far.fa-calendar-alt
+                      |  22/01/2021
+                  .des_item Ngày 22/5, Thường trực Hội VHNT tỉnh tổ chức cuộc họp BCH mở rộng để triển khai các nhiệm vụ từ nay đến cuối năm 2020
+                  .viewmore
+                    a.btn.btn_hover_black(href='detail.html' title='vé máy bay Thanh Tùng')
+                      i.far.fa-hand-point-right
+                      | Đọc thêm
+                
+              .col-12.col-lg-6.col-md-6.news_list.js-animate
+
+                .item
+                  .item-images
+                    a.image-item(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020')
+                      img.w-100(src='./templates/images/tin_tuc1.jpg' srcset='./templates/images/tin_tuc1@2x.jpg 2x' alt='Ve may bay Thanh Tung')
+                  .content_item
+                    h3
+                      a(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020') Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020 tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương Lấy sự hài lòng của người dân làm thước đo cho hiệu quả công tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương 
+                    .post-date
+                      i.far.fa-calendar-alt
+                      |  22/01/2021
+                  .des_item Ngày 22/5, Thường trực Hội VHNT tỉnh tổ chức cuộc họp BCH mở rộng để triển khai các nhiệm vụ từ nay đến cuối năm 2020
+                  .viewmore
+                    a.btn.btn_hover_black(href='detail.html' title='vé máy bay Thanh Tùng')
+                      i.far.fa-hand-point-right
+                      | Đọc thêm 
+              .col-12.col-lg-6.col-md-6.news_list.js-animate
+
+                .item
+                  .item-images
+                    a.image-item(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020')
+                      img.w-100(src='./templates/images/tin_tuc1.jpg' srcset='./templates/images/tin_tuc1@2x.jpg 2x' alt='Ve may bay Thanh Tung')
+                  .content_item
+                    h3
+                      a(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020') Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020 tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương Lấy sự hài lòng của người dân làm thước đo cho hiệu quả công tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương 
+                    .post-date
+                      i.far.fa-calendar-alt
+                      |  22/01/2021
+                  .des_item Ngày 22/5, Thường trực Hội VHNT tỉnh tổ chức cuộc họp BCH mở rộng để triển khai các nhiệm vụ từ nay đến cuối năm 2020
+                  .viewmore
+                    a.btn.btn_hover_black(href='detail.html' title='vé máy bay Thanh Tùng')
+                      i.far.fa-hand-point-right
+                      | Đọc thêm
+                
+              .col-12.col-lg-6.col-md-6.news_list.js-animate
+
+                .item
+                  .item-images
+                    a.image-item(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020')
+                      img.w-100(src='./templates/images/tin_tuc1.jpg' srcset='./templates/images/tin_tuc1@2x.jpg 2x' alt='Ve may bay Thanh Tung')
+                  .content_item
+                    h3
+                      a(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020') Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020 tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương Lấy sự hài lòng của người dân làm thước đo cho hiệu quả công tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương 
+                    .post-date
+                      i.far.fa-calendar-alt
+                      |  22/01/2021
+                  .des_item Ngày 22/5, Thường trực Hội VHNT tỉnh tổ chức cuộc họp BCH mở rộng để triển khai các nhiệm vụ từ nay đến cuối năm 2020
+                  .viewmore
+                    a.btn.btn_hover_black(href='detail.html' title='vé máy bay Thanh Tùng')
+                      i.far.fa-hand-point-right
+                      | Đọc thêm 
+              .col-12.col-lg-6.col-md-6.news_list.js-animate
+
+                .item
+                  .item-images
+                    a.image-item(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020')
+                      img.w-100(src='./templates/images/tin_tuc1.jpg' srcset='./templates/images/tin_tuc1@2x.jpg 2x' alt='Ve may bay Thanh Tung')
+                  .content_item
+                    h3
+                      a(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020') Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020 tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương Lấy sự hài lòng của người dân làm thước đo cho hiệu quả công tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương 
+                    .post-date
+                      i.far.fa-calendar-alt
+                      |  22/01/2021
+                  .des_item Ngày 22/5, Thường trực Hội VHNT tỉnh tổ chức cuộc họp BCH mở rộng để triển khai các nhiệm vụ từ nay đến cuối năm 2020
+                  .viewmore
+                    a.btn.btn_hover_black(href='detail.html' title='vé máy bay Thanh Tùng')
+                      i.far.fa-hand-point-right
+                      | Đọc thêm
+                
+              .col-12.col-lg-6.col-md-6.news_list.js-animate
+
+                .item
+                  .item-images
+                    a.image-item(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020')
+                      img.w-100(src='./templates/images/tin_tuc1.jpg' srcset='./templates/images/tin_tuc1@2x.jpg 2x' alt='Ve may bay Thanh Tung')
+                  .content_item
+                    h3
+                      a(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020') Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020 tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương Lấy sự hài lòng của người dân làm thước đo cho hiệu quả công tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương 
+                    .post-date
+                      i.far.fa-calendar-alt
+                      |  22/01/2021
+                  .des_item Ngày 22/5, Thường trực Hội VHNT tỉnh tổ chức cuộc họp BCH mở rộng để triển khai các nhiệm vụ từ nay đến cuối năm 2020
+                  .viewmore
+                    a.btn.btn_hover_black(href='detail.html' title='vé máy bay Thanh Tùng')
+                      i.far.fa-hand-point-right
+                      | Đọc thêm 
+              .col-12.col-lg-6.col-md-6.news_list.js-animate
+
+                .item
+                  .item-images
+                    a.image-item(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020')
+                      img.w-100(src='./templates/images/tin_tuc1.jpg' srcset='./templates/images/tin_tuc1@2x.jpg 2x' alt='Ve may bay Thanh Tung')
+                  .content_item
+                    h3
+                      a(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020') Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020 tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương Lấy sự hài lòng của người dân làm thước đo cho hiệu quả công tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương 
+                    .post-date
+                      i.far.fa-calendar-alt
+                      |  22/01/2021
+                  .des_item Ngày 22/5, Thường trực Hội VHNT tỉnh tổ chức cuộc họp BCH mở rộng để triển khai các nhiệm vụ từ nay đến cuối năm 2020
+                  .viewmore
+                    a.btn.btn_hover_black(href='detail.html' title='vé máy bay Thanh Tùng')
+                      i.far.fa-hand-point-right
+                      | Đọc thêm
+                
+              .col-12.col-lg-6.col-md-6.news_list.js-animate
+
+                .item
+                  .item-images
+                    a.image-item(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020')
+                      img.w-100(src='./templates/images/tin_tuc1.jpg' srcset='./templates/images/tin_tuc1@2x.jpg 2x' alt='Ve may bay Thanh Tung')
+                  .content_item
+                    h3
+                      a(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020') Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020 tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương Lấy sự hài lòng của người dân làm thước đo cho hiệu quả công tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương 
+                    .post-date
+                      i.far.fa-calendar-alt
+                      |  22/01/2021
+                  .des_item Ngày 22/5, Thường trực Hội VHNT tỉnh tổ chức cuộc họp BCH mở rộng để triển khai các nhiệm vụ từ nay đến cuối năm 2020
+                  .viewmore
+                    a.btn.btn_hover_black(href='detail.html' title='vé máy bay Thanh Tùng')
+                      i.far.fa-hand-point-right
+                      | Đọc thêm 
+              .col-12.col-lg-6.col-md-6.news_list.js-animate
+
+                .item
+                  .item-images
+                    a.image-item(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020')
+                      img.w-100(src='./templates/images/tin_tuc1.jpg' srcset='./templates/images/tin_tuc1@2x.jpg 2x' alt='Ve may bay Thanh Tung')
+                  .content_item
+                    h3
+                      a(href='detail.html' title='Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020') Hội VHNT tỉnh: Triển khai nhiệm vụ đến cuối năm 2020 tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương Lấy sự hài lòng của người dân làm thước đo cho hiệu quả công tác cải cách hành chính tại địa phương tác cải cách hành chính tại địa phương 
+                    .post-date
+                      i.far.fa-calendar-alt
+                      |  22/01/2021
+                  .des_item Ngày 22/5, Thường trực Hội VHNT tỉnh tổ chức cuộc họp BCH mở rộng để triển khai các nhiệm vụ từ nay đến cuối năm 2020
+                  .viewmore
+                    a.btn.btn_hover_black(href='detail.html' title='vé máy bay Thanh Tùng')
+                      i.far.fa-hand-point-right
+                      | Đọc thêm
+                
+          .col-12.col-lg-4.d-none.d-lg-block
+            block box_right
+              include ./elements/_box_right.pug
+
+  //- footer
+  block footer
+    include ./elements/_footer.pug
+  block menu_mobile
+    include ./elements/_menu_mobile.pug
+
+  script(src="./templates/js/vendor/jquery.min.js")
+  script(src="./templates/js/vendor/slick.js")
+  script(src="./templates/js/vendor/jquery.nivo.slider.js")
+  script(src="./templates/js/default.js")

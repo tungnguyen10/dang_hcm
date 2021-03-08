@@ -20,11 +20,14 @@
 .header {
   background:#fff5cc;
   position: relative;
-  
+  .container{
+    position: relative;
+  }
   .logo{
-    padding: 10px 20% 10px 0;
+    padding: 10px 0;
     position: relative;
     z-index: 3;
+    width: 75%;
     @include sp{
       padding: 10px 0;
     }
@@ -39,24 +42,27 @@
         left: -8%;
         top: -1%;
         bottom: -1%;
-        right: -8%;
+        right: 0;
         @include sp{
          display: none;
         }
       }
   }
-  .nivo-main-image{
-    object-fit: cover;
-    height: 100% !important;
-  }
+
   .slider_top{
     height: 100%;
     position: absolute;
+    width: 45%;
     top: 0;
     right: 0;
-    width: 40%;
     bottom: 0;
     z-index: 0;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit:  cover;
+    }
     @include sp{
       display: none;
     }

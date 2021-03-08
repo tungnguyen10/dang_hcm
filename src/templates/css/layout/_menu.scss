@@ -1,5 +1,7 @@
 nav{
+  position: relative;
   background: $linkColor02;
+  z-index: 3;
 }
 .nav {
   position: relative;
@@ -107,7 +109,13 @@ nav{
 
     li {
       padding: 0;
+      display: block;
+      padding: 0;
+      flex: 0 0 100%;
+      width: 100%;
+      
       a {
+        text-align: left;
         padding: 15px 15px;
         position: relative;
         padding-right: 20px;

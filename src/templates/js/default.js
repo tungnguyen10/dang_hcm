@@ -139,9 +139,22 @@ $(window).load(function () {
     // vertical: true,
     arrows: false,
     autoplay: true,
+    fade:false,
+    autoplay: true,
+    speed:2000,
   });
-  $(".js-slider").nivoSlider();
-  // js link
+  $(".js-nivoSlider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    focusOnSelect: true,
+    arrows: false,
+    autoplay: true,
+    fade:true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed:5000,
+  });
   $("#selectLink").on("change", function (e) {
     var optionSelected = $("option:selected", this);
     var valueSelected = this.value;
@@ -157,4 +170,8 @@ $(window).load(function () {
     $(this).addClass("current");
     $("#" + video_id).addClass("current");
   });
+ 
 });
+
+
+

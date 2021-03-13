@@ -4,6 +4,9 @@
 
 .index-content {
   position: relative;
+  @include sp{
+    margin-bottom: 10%;
+  }
   .box-white {
     background: #ffffff;
     border: 1px solid #e6e6e6;

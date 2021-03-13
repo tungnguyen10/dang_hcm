@@ -19,9 +19,18 @@ $(window).load(function () {
   });
 });
 
-if ($(window).width() < 768) {
-  $($('.index-content .index-content__right .js-animate').get().reverse()).each(function(argument) {
-    var t = $(this).index(), current = $(this);
-    $('.index-content .box_mobile .js-animate:nth-child(' + (t+2) + ')').after(current);
-  })
-}
+$(window).on("load resize", function(){
+  if ($(window).width() < 768) {
+    $(".index-content__right_banner").remove();
+    $(
+      $(".index-content .index-content__right .js-animate").get().reverse()
+    ).each(function (argument) {
+      var t = $(this).index(),
+        current = $(this);
+      $(
+        ".index-content .box_mobile .js-animate:nth-child(" + (t + 2) + ")"
+      ).after(current);
+      
+    });
+  }
+});

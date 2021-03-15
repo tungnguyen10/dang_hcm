@@ -21,16 +21,20 @@ $(window).load(function () {
 
 $(window).on("load resize", function(){
   if ($(window).width() < 768) {
+    var array = [];
     $(".index-content__right_banner").remove();
-    $(
-      $(".index-content .index-content__right .js-animate").get().reverse()
-    ).each(function (argument) {
-      var t = $(this).index(),
-        current = $(this);
-      $(
-        ".index-content .box_mobile .js-animate:nth-child(" + (t + 2) + ")"
-      ).after(current);
-      
+    $($(".index-content .index-content__right .js-animate").get().reverse()).each(function (argument) {
+      var t = $(this).index(), current = $(this);
+     
+      if ($('.index-content .box_mobile .js-animate').length - 1 < t)
+					// array.push(current);
+					console.log(array.push(current));
+				else
+					$('.index-content .box_mobile .js-animate:nth-child(' + (t+1) + ')').after(current);
+			})
+
+			array.reverse().forEach(function(item,i) {
+				$('.index-content .box_mobile').append(item);
     });
   }
 });

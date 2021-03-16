@@ -209,7 +209,7 @@
         }
       }
 
-      .ul-has-child1 {
+      .ul-has-child {
         display: none;
 
         li {
@@ -218,11 +218,18 @@
             text-transform: none;
           }
 
-          .ul-has-child2 {
+          > .ul-has-child {
             display: none;
 
             li a {
               padding-left: 22.5px;
+            }
+            > .ul-has-child {
+              display: none;
+  
+              li a {
+                padding-left: 30.5px;
+              }
             }
           }
         }
